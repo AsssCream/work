@@ -38,7 +38,7 @@ git config --global user.email "your email"
 
 ⑩ $ git log --oneline 这样的话就可以直接查看简短的日志
 
-$ git config --global core.quotepath false Git 默认会把中文转码显示
+⑪ $ git config --global core.quotepath false Git 默认会把中文转码显示
 
 #### 3. 和github建立联系
 
@@ -49,3 +49,4 @@ $ git config --global core.quotepath false Git 默认会把中文转码显示
 
 解决方法：$ git pull origin main 先同步
 
+⑫ ⑬ ⑭ ⑮ ⑯ ⑰ ⑱ ⑲ ⑳
