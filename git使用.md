@@ -40,6 +40,8 @@ git config --global user.email "your email"
 
 ⑪ $ git config --global core.quotepath false Git 默认会把中文转码显示
 
+⑫ $ git pull 同步最新
+
 #### 3. 和github建立联系
 
 流程：$ git add .  -> $ git commit -m "日志信息" 文件名 -> $ git push
@@ -48,5 +50,3 @@ git config --global user.email "your email"
 ![image-20260315194121809](C:\Users\killa\AppData\Roaming\Typora\typora-user-images\image-20260315194121809.png)
 
 解决方法：$ git pull origin main 先同步
-
-⑫ ⑬ ⑭ ⑮ ⑯ ⑰ ⑱ ⑲ ⑳
