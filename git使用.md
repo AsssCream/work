@@ -81,3 +81,10 @@ git config --global user.email "your email"
 
 ![image-20260327140418745](C:\Users\lhh\AppData\Roaming\Typora\typora-user-images\image-20260327140418745.png)
 
+如果第二次还是不行的话
+
+切换到 443 端口 SSH：
+
+1. git remote set-url origin ssh://git@ssh.github.com:443/AsssCream/work.git
+
+2. git push
