@@ -50,3 +50,34 @@ git config --global user.email "your email"
 ![image-20260315194121809](C:\Users\killa\AppData\Roaming\Typora\typora-user-images\image-20260315194121809.png)
 
 解决方法：$ git pull origin main 先同步
+
+#### 4. SSL报错解决办法
+
+① 先查看现在的远程地址：git remote -v    **是 `https` 开头的，这就是报错根源。**
+
+② 直接改成 SSH 地址  git remote set-url origin git@github.com:AsssCream/work.git
+
+③ 然后直接 git push
+
+这个时候如果不成功，是因为还没给 Git 配置 **SSH 公钥**
+
+首先生成 SSH 密钥 ：ssh-keygen -t ed25519 -C "github"（一路回车）
+
+再查看并复制公钥 cat ~/.ssh/id_ed25519.pub 
+
+（ 输出一大段以 `ssh-ed25519` 开头的字符串，**全部选中 → 右键复制 **）
+
+最后 去 GitHub 粘贴公钥 https://github.com/settings/ssh/new
+
+1. Title 随便填：`mygit`
+
+2. Key 类型选：`Authentication Key`
+
+3. Key 框里：**粘贴你刚才复制的那一大段**
+
+4. 点下面绿色按钮：**Add SSH key**
+
+5. 回到 Git Bash，再次 push
+
+![image-20260327140418745](C:\Users\lhh\AppData\Roaming\Typora\typora-user-images\image-20260327140418745.png)
+
